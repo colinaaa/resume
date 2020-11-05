@@ -64,6 +64,18 @@ Linux/操作系统/数据结构/算法/计算机网络
 
 \section{项目经历}
 
+\datedproject{联小创桌游助手}{小程序大赛项目}{2020年10月 - 至今}
+{\it 一个桌游发牌小助手}
+前端\quad \href{https://github.com/colinaaa/ddwp-frontend}{{\color{gray}{\faLink}}~}
+后端\quad \href{https://github.com/colinaaa/ddwp-backend}{{\color{gray}{\faLink}}~}
+\quad \emph{前端开发与后端开发}
+\begin{itemize}
+  \item 前端技术栈：Taro@v2/apollo-client/React(hooks)/WebSocket/TypeScript/Lesscss
+  \item 后端技术栈：TypeScript/GraphQL/type-graphql/mongoDB/type-mongoose/Express.js
+  \item 将Apollo全家桶移植至小程序平台，包括query/mutation/subscription等绝大多数功能。
+  \item 通过小程序提供的API，使用TypeScript实现WebSocket对象，使得同样的代码可以在Web端与小程序端同时运行。
+\end{itemize}
+
 \datedproject{Unique HR系统}{团队项目}{2020年2月 - 至今}
 {\it 联创团队招新系统前端与后台}
 \quad \href{https://github.com/UniqueStudio/UniqueRecruitmentDashboard}{{\color{gray}{\faLink}}~}
@@ -97,37 +109,61 @@ UniqueHackday为联创团队举办的hackathon比赛，该项目为比赛提供�
   \item 运维：使用阿里云镜像触发器与rancher\ webhook实现持续交付 (CD)
 \end{itemize}
 
+\section{课程实验}
+% ---
+\datedproject{xv6 Labs}{课内项目}{2020年9月 -- 至今}
+{\it MIT 6.S081 Operating System Engineering 课程实验}
+\quad \href{https://github.com/colinaaa/xv6-labs-2020}{{\color{gray}{\faLink}}~}
+\vspace{0.4ex}
+\\
+MIT操作系统课程实验，基于UNIX v6 与 RISC-V，全部独立完成。
+\begin{itemize}
+  \item 熟练掌握xv6系统源代码，RISC-V页表的功能与实现，RISC-V M态，S态，U态的区别。
+  \item 了解xv6系统进程调度的方式，了解xv6触发中断，响应中断，中断返回的方式。
+  \item page table：实现了一个用户态的page table，使得在内核态不需要进行页表切换即可访问用户态内存。
+  \item trap：实现一个自定义的trap，alarm。在n次CPU ticks后，中断用户进程，调用callback函数，然后返回现场。
+  \item lazy allocation：实现了类似Linux的lazy allocation，通过page fault来延后分配物理内存的时间。
+  \item copy on write：实现了类似Linux的cow，同样通过page fault与page table来提升fork的效率。
+\end{itemize}
+
+\datedproject{COOL compiler}{课内项目}{2020年3月 - 2020年4月}
+{\it Stanford CS143 Compiler课程实验}
+\vspace{0.4ex}
+\\
+为COOL (Classroom Object Oriented Language)语言实现了一个编译器前端
+\begin{itemize}
+  \item 使用flex生成词法分析器，了解Context Free Grammar相关概念
+  \item 使用bison生成语法分析器，了解Bottom Up parser算法（shift-reduce）
+\end{itemize}
+
+\datedproject{TCC}{课内项目}{2020年2月 -- 2020年3月}
+{\it C语言编译器前端}
+\quad \href{https://github.com/colinaaa/hello-ds}{{\color{gray}{\faLink}}~}
+\vspace{0.4ex}
+\\
+数据结构课程设计，实现了一个C子集的编译器前端。
+\begin{itemize}
+  \item 编译原理（前端部分），核心代码部分可以自举
+  \item 词法分析，语法分析（Top down parser, 递归下降），语义分析（类型判断，常量优化）
+\end{itemize}
+
+\datedproject{CSAPP Labs}{课内项目}{2020年1月 -- 2020年3月}
+{\it CMU 15213 Introduction to Computer System课程实验}
+\vspace{0.4ex}
+\\
+著名的有关操作系统基础知识的几个实验，全部独立完成。
+\begin{itemize}
+  \item x86-64汇编的阅读与编写，包括逆向和基础的攻击（栈溢出，Return-oriented programming）
+  \item 实现了一个模拟x86-64虚拟内存的虚拟机，并优化代码，以提高其缓存命中率
+  \item 实现了支持单线程的{\tt malloc}函数，使用了多个双向循环内核链表，从而兼顾了分配的速率与碎片产生率
+  \item 实现了Linux下的一个shell程序，支持IO重定向，管道等操作
+\end{itemize}
+%
+% % ---
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %            abandoned                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ---
-% \datedproject{TCC}{课内项目}{2020年2月 -- 2020年3月}
-% {\it C语言编译器前端}
-% \quad \href{https://github.com/colinaaa/hello-ds}{{\color{gray}{\faLink}}~}
-% \quad \emph{核心开发者}
-% \vspace{0.4ex}
-% \\
-% 数据结构课程设计，实现了一个C子集的编译器前端。
-% \begin{itemize}
-%   \item 编译原理（前端部分），核心代码部分可以自举
-%   \item 词法分析，语法分析（Top down parser, 递归下降），语义分析（类型判断，常量优化）
-% \end{itemize}
-%
-% % ---
-% \datedproject{CSAPP Labs}{课内项目}{2020年1月 -- 2020年3月}
-% {\it CMU 15213 Introduction to Computer System课程实验}
-% % \quad \href{https://github.com/colinaaa/hello-ds}{{\color{gray}{\faLink}}~}
-% \quad \emph{核心开发者}
-% \vspace{0.4ex}
-% \\
-% 著名的有关操作系统基础知识的几个实验，全部独立完成。
-% \begin{itemize}
-%   \item x86-64汇编的阅读与编写，包括逆向和基础的攻击（栈溢出，Return-oriented programming）
-%   \item 实现了一个模拟x86-64虚拟内存的虚拟机，并优化代码，以提高其缓存命中率
-%   \item 实现了支持单线程的{\tt malloc}函数，使用了多个双向循环内核链表，从而兼顾了分配的速率与碎片产生率
-%   \item 实现了Linux下的一个shell程序，支持IO重定向，管道等操作
-% \end{itemize}
-
 % ---
 % \datedproject{TCC}{课内项目}{2020年2月 -- 2020年3月}
 % {\it C语言编译器前端}
