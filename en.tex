@@ -1,0 +1,97 @@
+%!TEX program = xelatex
+
+\documentclass{uniquecv}
+
+\usepackage{fontawesome5}
+\usepackage{fontspec}
+\usepackage[colorlinks]{hyperref}
+% ----------------------------------------------------------------------------- %
+
+%\setmonofont{FiraCode}
+\begin{document}
+\name{Qingyu Wang}
+\medskip
+
+\basicinfo{
+  \faPhone ~ (+86) 136-5113-2812
+  \textperiodcentered\
+  \faEnvelope ~ qingyu.wang@aliyun.com
+  \textperiodcentered\
+  \faGithub ~ github.com/colinaaa
+  \textperiodcentered\
+  \faBlog ~ \href{https://about.outsiders.top}{\color{black}{blog}}
+}
+
+% ----------------------------------------------------------------------------- %
+
+\section{Education}
+\dateditem{\textbf{TsingHua University High School} \quad High School}{2012 -- 2018 }
+Grade: Top 10\%
+\dateditem{\textbf{Huazhong University of Science \& Technology} \quad Computer Science}{2018 -- Now}
+Grade: Top 20\% \quad English: CET4-573 \quad CET6-551
+
+
+% ----------------------------------------------------------------------------- %
+
+\section{Professional Skills}
+\smallskip
+\textbf{Programming}
+\quad C++1a/Golang/TypeScript/React/Linux/Operating System/Data Structure/Computer Networking
+
+\textbf{Tools} \quad \LaTeX/(neo)vim/Git
+
+% ----------------------------------------------------------------------------- %
+
+\section{Internships}
+\dateditem{\textbf{Bytedance Inc.} \quad Frontend intern} {Dec. 2020 - Mar. 2021}
+
+\begin{itemize}
+  \item Build pages in Douyin.
+  \item Participate in development of a hybrid framework ReactLynx.
+\end{itemize}
+
+\dateditem{\textbf{Tencent Inc.} \quad Backend intern} {Jul. 2020 - Sept. 2020}
+
+\begin{itemize}
+  \item Build a dashboard for Novartis.
+  \item Optimize building pipeline of the Projects.
+\end{itemize}
+
+% ----------------------------------------------------------------------------- %
+
+\section{Projects}
+
+\datedproject{Unique HR System}{Team Project}{Feb. 2020 - Now}
+{\it The Hire Recruitment System for Unique Studio}
+\quad \emph{maintainer}
+\vspace{0.4ex}
+
+\begin{itemize}
+  \item Frontend: React/TypeScript/Redux/RxJS/Material UI
+  \item Backend: Node.js/TypeScript/Mongoose/Express.js
+\end{itemize}
+
+\datedproject{xv6 Labs}{Class Project}{Sept. 2020 -- Nov. 2020}
+{\it MIT 6.S081 Operating System Engineering Labs}
+\vspace{0.4ex}
+\\
+A Operating System labs based on UNIX v6 and RISC-V.
+\begin{itemize}
+  \item Implement a user space page table, the kernel can access user memory without changing page table.
+  \item Implement lazy allocation, delay the allocation of physical memory through page fault.
+  \item Implement copy on write, improve the efficiency of fork through page fault and page table.
+\end{itemize}
+
+\datedproject{CSAPP Labs}{Class Project}{Jan. 2020 -- Mar. 2020}
+{\it CMU 15213 Introduction to Computer System labs}
+\vspace{0.4ex}
+\begin{itemize}
+  \item AMD-64 Assembly / Cache / malloc / Shell
+\end{itemize}
+
+% ----------------------------------------------------------------------------- %
+
+\section{Clubs}
+\dateditem{\textbf{Unique Studio}}{Oct. 2018 -- Now}
+
+\end{document}
